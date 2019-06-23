@@ -9,10 +9,10 @@ export const TOGGLE = 'TOGGLE';
 // logic of updating the central Redux store. That
 // is left to the reducer(s).
 
-export function add(value) {
+export function add(newTodo) {
   return {
     type: ADD,
-    payload: { value: value, completed: false}
+    payload: newTodo
   };
 }
 
